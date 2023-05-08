@@ -38,3 +38,6 @@ void searchLedger(Day *d[], int count); // 배열에 저장된 가계부 중 원
 void loadDay(DailyLoad *cd); // 저장된 가계부 중 원하는 날의 가계부를 불러오는 기능.
 int loadLedger(Day *m[], int list[]); // 저장된 가계부 중 원하는 달의 가계부를 모두 불러오는 기능.
 void calLedger(Day *m[], int budget); // loadLedger()로 불러온 가계부를 월간정산하기 위해 계산하는 기능.
+
+
+//function들을 기능별로 구분해서 따로 코드로 만들 것.

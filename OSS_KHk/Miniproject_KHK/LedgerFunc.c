@@ -140,7 +140,7 @@ void mkFolder(Day *d[], int index, char (*save_pth)[20])
         sprintf(mm, "%d", d[i]->mon);
         strcat(m_pth, mm);
         strcat(m_pth, "/");
-        mkdir(m_pth, 0775);
+        mkdir(m_pth);
         strcpy(save_pth[i], m_pth);
         free(m_pth);
     }
@@ -350,3 +350,5 @@ void calLedger(Day *m[], int budget)
     printf("%2d    %2d     %2d    %2d    %.2f    %.2f\n", mm, budget, cal->m_sumin, cal->m_sumout, cal->eff, budeff);
     free(cal);
 }
+
+//기능 수정 필요, mkdir의 경우 어떻게 할 지 조금 더 고민

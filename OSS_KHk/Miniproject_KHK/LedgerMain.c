@@ -85,3 +85,5 @@ int main(void)
 
     return 0;
 }
+
+// 따로 db 구축하는 코드를 작성할 필요가 있음.
